@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DosLayouts">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="412dp"
+        android:layout_height="332dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/b39" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            app:layout_column="0"
+            app:layout_row="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="397dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <ImageButton
+            android:id="@+id/imageView5"
+            android:layout_width="341dp"
+            android:layout_height="257dp"
+            app:srcCompat="@drawable/_50"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="270dp"/>
+        <ImageButton
+            android:id="@+id/flecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Grid"
+            android:contentDescription="icono_flecha"
+            android:padding="16dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="270dp"
+            android:src="@drawable/arrow_right_512"
+            style="?android:attr/borderlessButtonStyle" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

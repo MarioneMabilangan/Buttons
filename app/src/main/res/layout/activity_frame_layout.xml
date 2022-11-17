@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameLayout">
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="icono_estrella"
+            android:padding="16dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/_6ac5ba070e188d56e21aa90df5dc9f6" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="330dp"
+            android:text="Hola uwu" />
+
+        <ToggleButton android:id="@+id/btnToggle"
+            android:textOff="off"
+            android:textOn="on"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="400dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnToggle"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="400dp"
+            android:minHeight="48dp"
+            android:switchPadding="10dp"
+            android:text="Opción" />
+
+        <ImageButton
+            android:id="@+id/flecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Grid"
+            android:contentDescription="icono_flecha"
+            android:padding="16dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/arrow_right_512"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

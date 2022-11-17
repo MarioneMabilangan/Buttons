@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/_bd"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OH HELL NO"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="350dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HELL NO" android:layout_marginLeft="140dp"
+            android:layout_marginTop="400dp"/>
+
+        <ImageButton
+            android:id="@+id/flecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Grid"
+            android:contentDescription="icono_flecha"
+            android:padding="16dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/arrow_right_512"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
