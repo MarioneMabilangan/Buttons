@@ -13,6 +13,13 @@
         android:theme="@style/Theme.TascaButtons"
         tools:targetApi="31">
         <activity
+            android:name=".RadioCheck"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".DosLayouts"
             android:exported="false">
             <meta-data

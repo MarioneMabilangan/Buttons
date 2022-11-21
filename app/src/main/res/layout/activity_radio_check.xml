@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioCheck">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:checked="false"
+        android:text="opcio 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="88dp"
+        android:checked="false"
+        android:text="opcio 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="88dp"
+        android:checked="false"
+        android:text="opcio 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/grbGrup1"
+        android:layout_width="222dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="308dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbOpcio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="opció 1" />
+
+        <RadioButton
+            android:id="@+id/rbOpcio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="opció 2" />
+
+        <RadioButton
+            android:id="@+id/rbOpcio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="opció 3" />
+
+        <RadioButton
+            android:id="@+id/rbOpcio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="opció 4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="540dp"
+        android:onClick="onclickbuttonMethod"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="184dp"
+        android:text="Resum?"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

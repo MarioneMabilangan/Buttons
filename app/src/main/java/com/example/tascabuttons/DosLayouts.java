@@ -18,7 +18,7 @@ public class DosLayouts extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DosLayouts.this, FrameLayout.class);
+                Intent intent = new Intent(DosLayouts.this, RadioCheck.class);
                 startActivity(intent);
             }
         });
