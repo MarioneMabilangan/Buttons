@@ -58,5 +58,8 @@ public class Personal extends AppCompatActivity {
         if (pais.equals("Argentina")){
             tpais.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ar_argentina_flag_icon,0,0,0);
         }
+        if(pais.equals("Cuba")){
+            tpais.setCompoundDrawablesWithIntrinsicBounds(R.drawable.cuba,0,0,0);
+        }
     }
 }
