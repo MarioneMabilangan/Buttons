@@ -66,18 +66,18 @@ public class Formulario extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l){
                 String value = String.valueOf(adapterView.getItemAtPosition(position));
                 System.out.println(value);
-                if (value.equals("{listview_image=2131165413, listview_title=España}")){
+                if (value.equals("{listview_image=2131230855, listview_title=España}")){
                     validarESP(adapterView);
                 }
-                if(value.equals("{listview_image=2131165415, listview_title=America}")){
+                if(value.equals("{listview_image=2131230949, listview_title=America}")){
                     validarUS(adapterView);
                 }
-                if(value.equals("{listview_image=2131165414, listview_title=Francia}")){
+                if(value.equals("{listview_image=2131230856, listview_title=Francia}")){
                     validarFR(adapterView);
                 }
-                if(value.equals("{listview_image=2131165412, listview_title=Argentina}")){
+                if(value.equals("{listview_image=2131230840, listview_title=Argentina}")){
                     validarAR(adapterView);
-                }if(value.equals("{listview_image=2131165416, listview_title=Cuba}")) {
+                }if(value.equals("{listview_image=2131230857, listview_title=Cuba}")) {
                     validarCU(adapterView);
                 }
             }
@@ -325,7 +325,6 @@ public class Formulario extends AppCompatActivity {
         }
     }
     public void validarCU(View v){
-
         Intent i = new Intent(Formulario.this, Personal.class);
         Intent i2 = new Intent(Formulario.this, Resumen.class);
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

@@ -2,7 +2,10 @@ package com.example.tascabuttons;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Personal extends AppCompatActivity {
@@ -61,5 +64,13 @@ public class Personal extends AppCompatActivity {
         if(pais.equals("Cuba")){
             tpais.setCompoundDrawablesWithIntrinsicBounds(R.drawable.cuba,0,0,0);
         }
+        ImageButton btn = (ImageButton)findViewById(R.id.flechass);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Personal.this, Reciclar.class);
+                startActivity(intent);
+            }
+        });
     }
 }
