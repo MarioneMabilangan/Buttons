@@ -1,5 +1,6 @@
 package com.example.tascabuttons;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +10,12 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-public class AdaptadorTitulares extends RecyclerView.Adapter<AdaptadorTitulares.ViewHolder>{
-    private Titular[] titulars;
+import java.util.ArrayList;
 
-    public AdaptadorTitulares(Titular[] titulars){
+public class AdaptadorTitulares extends RecyclerView.Adapter<AdaptadorTitulares.ViewHolder>{
+    private ArrayList<Titular> titulars;
+
+    public AdaptadorTitulares(ArrayList<Titular> titulars){
         this.titulars = titulars;
     }
 
@@ -27,14 +30,26 @@ public class AdaptadorTitulares extends RecyclerView.Adapter<AdaptadorTitulares.
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        final Titular myListData = titulars[position];
-        holder.textView.setText(titulars[position].getTitulo());
-        holder.imageView.setImageResource(titulars[position].getIdimagen());
+        final Titular myListData = titulars.get(position);
+        holder.textView.setText(titulars.get(position).getTitulo());
+        holder.imageView.setImageResource(titulars.get(position).getIdimagen());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Log.i("DemoRecView", "Pulsado el elemento:${it.titulo}");
+
+            }
+        });
+
     }
+
+
 
     @Override
     public int getItemCount() {
-        return titulars.length;
+        return titulars.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
